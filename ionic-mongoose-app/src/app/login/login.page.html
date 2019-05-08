@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Identifiant</ion-label>
+      <ion-input type="text" [(ngModel)]="contact.login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="Password" [(ngModel)] ="contact.password"></ion-input>
+    </ion-item>
+
+    <ion-button  shape="round"  type="submit" color="secondary" (click)="validateLogin()">Connection</ion-button>
+    <!-- <ion-button expand="block"   type="submit" color="tertiary">Inscription</ion-button> -->
+
+  </ion-list>
+</ion-content>
